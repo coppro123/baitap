@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.helloworld;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Admin
+ */
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        
+        
+        final int numbers = 5;
+        
+        Scanner sc = new Scanner(System.in);
+        double num = 0;
+        
+        System.out.print("Vui lòng nhập số thứ nhất: ");
+        num += sc.nextInt();
+        System.out.print("Vui lòng nhập số thứ hai: ");
+        num += sc.nextInt();
+        System.out.print("Vui lòng nhập số thứ ba: ");
+        num += sc.nextInt();
+        System.out.print("Vui lòng nhập số thứ tư: ");
+        num += sc.nextInt();
+        System.out.print("Vui lòng nhập số thứ năm: ");
+        num += sc.nextInt();
+        
+        num = num / numbers;
+        System.out.println("Trung bình của năm số nhập là: " + num);
+    }
+}
