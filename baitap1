@@ -15,23 +15,16 @@ public class HelloWorld {
     public static void main(String[] args) {
         
         
-        final int numbers = 5;
+        final int rate = 23500;
         
         Scanner sc = new Scanner(System.in);
-        double num = 0;
+        double input = 0;
         
-        System.out.print("Vui lòng nhập số thứ nhất: ");
-        num += sc.nextInt();
-        System.out.print("Vui lòng nhập số thứ hai: ");
-        num += sc.nextInt();
-        System.out.print("Vui lòng nhập số thứ ba: ");
-        num += sc.nextInt();
-        System.out.print("Vui lòng nhập số thứ tư: ");
-        num += sc.nextInt();
-        System.out.print("Vui lòng nhập số thứ năm: ");
-        num += sc.nextInt();
+        System.out.print("Vui lòng nhập số lượng usd cần đổi: ");
+        input = sc.nextDouble();
         
-        num = num / numbers;
-        System.out.println("Trung bình của năm số nhập là: " + num);
+        input = input * rate;
+        System.out.println("Số vnd sau khi đổi là: " + input);
     }
 }
+
